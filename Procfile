@@ -1,0 +1,1 @@
+web: gunicorn hng_task_2.wsgi
