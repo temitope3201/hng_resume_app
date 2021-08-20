@@ -1,0 +1,55 @@
+{% extends 'resumes/base.html' %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h1 class="display-4">ADEBAYO, Ridwan Temitope</h1>
+    {% load static %} 
+    <img src=" {% static "resumes/media/download.png" %}" alt="home" />
+    <p class="lead">A young aspiring programmer with a will to learn and improve. I am enthusiastic about
+      the latest technological trends and applying them to solve problem</p>
+    <hr class="my-4">
+    <p> LEAVE A MESSAGE </p>
+    <a class="btn btn-primary btn-lg" href="{% url 'contact' %}" role="button"> MAKE CONTACT </a>
+  </div>
+
+  <div class="shadow-none p-3 mb-5 bg-light rounded">
+    <div class="jumbotron">
+      <h1 class="display-4"> BIODATA </h1>
+      <p class="lead">A young aspiring programmer with a will to learn and improve. Iam enthusiastic about
+        the latest technological trends and applying them to solve problem</p>
+      <hr class="my-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Featured
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><h6>GENDER:</h6> Male  </li>
+          <li class="list-group-item"><h6>AGE:</h6> 24 </li>
+          <li class="list-group-item"><h6>NATIONALITY:</h6> Nigerian </li>
+          <li class="list-group-item"><h6>TEL:</h6> <a href="tel:+2349061780323"> +2349061780323 </a> </li>
+          <li class="list-group-item"><h6>EMAIL:</h6> <a href="mailto:temitopeadebayo749@gmail.com"> temitopeadebayo749@gmail.com </a> </li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+
+  <div class="shadow-none p-3 mb-5 bg-light rounded">
+    <div class="jumbotron">
+      <h1 class="display-4"> RELEVANT LINKS</h1>
+
+      <hr class="my-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Featured
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><h6>GITHUB PROFILE:</h6> <a href=" https://github.com/temitope3201">  https://github.com/temitope3201 </a> </li>
+          <li class="list-group-item"><h6> CHECK OUT MY PROJECT:</h6> <a href="  https://ridwandjangoapp.herokuapp.com "> VISIT MY BLOG </a> </li>
+          <li class="list-group-item"><h6> ZURI INTERNSHIP PAGE:</h6> <a href="https//:internship.zuri.team"> VISIT THE PAGE </a> </li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+
+
+{% endblock %}

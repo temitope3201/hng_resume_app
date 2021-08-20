@@ -1,0 +1,28 @@
+{% extends 'resumes/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+{% for message in messages %}
+<div class="alert {{ message.tags }} alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    {{ message | safe }}
+</div>
+{% endfor %}
+
+<div class="content-section" >
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4" > SEND A MESSAGE </legend>
+            {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit" > POST </button>
+        </div>
+    </form>
+
+
+</div>
+{% endblock %}
